@@ -1,0 +1,161 @@
+:root {
+    --fontColor--title--transparency: rgba(255, 255, 255, 0.8);
+    --fontColor--title: #fff;
+    --fontColor--button: #000;
+
+    --borderRadius--button: 2rem 1rem;
+    --innerShadow--button: inset 5px 7px 10px rgba(0, 0, 0, 0.6);
+    --backgroundColor--button: #D9D9D9;
+    --backgroundColor--buttonClicked: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: "caviar_dreams";
+    src: url(../../Fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: "caviar_dreams_bold";
+    src: url(../../Fonts/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+    font-family: "riffic_bold";
+    src: url(../../Fonts/RifficFree-Bold.ttf);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    transition: all .25s ease-in-out;
+}
+
+html {
+    background: linear-gradient(180deg, #180E56 0%, #000000 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+
+    width: 100vw;
+}
+
+h1 {
+    font-family: 'riffic_bold';
+}
+
+h2 {
+    font-family: 'riffic_bold';
+}
+
+h3 {
+    font-family: 'riffic_bold';
+}
+
+.hidden {
+    display: none;
+}
+
+.body_background--image {
+    background-image: url(../assets/image_background_launchPage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_menuPage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    padding: 1% 0;
+}
+
+.menuPage_content--title {
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+
+    color: var(--fontColor--title--transparency);
+}
+
+.menuPage_content--subtitle {
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    color: var(--fontColor--title--transparency);
+
+    margin-left: 10%;
+}
+
+.menuPage_content--subtitleStrong {
+    font-family: 'riffic_bold';
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.main_menuPage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuPage_container--navButtons {
+    align-items: center;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: auto auto;
+
+    margin: 2%;
+}
+
+.menuPage_content--navButtonsButton {
+    grid-column: span 1;
+
+    background-color: var(--backgroundColor--button);
+    
+    box-shadow: inset 5px 7px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 2rem 1rem;
+    border: none;
+
+    cursor: pointer;
+
+    margin: .5rem 1rem;
+
+    height: 18rem;
+    width: 20rem;
+
+    transform: skew(-20deg);
+}
+
+.menuPage_content--navButtonsButton p {
+    color: var(--fontColor--button);
+
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    transform: skew(20deg);
+}
+
+.menuPage_content--navButtonsButton:hover {
+    background-color: var(--backgroundColor--buttonClicked);
+    transform: scale(1.05);
+}
+
+.menuPage_content--navButtonsButton:hover p{
+    transform: scale(1.05);
+}
+
+.menuPage_content--image {
+    margin: 2rem 0;
+}
