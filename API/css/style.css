@@ -118,7 +118,7 @@ h3 {
     margin: 2%;
 }
 
-.menuPage_content--navButtonsButton {
+.content_navButtons--Button {
     grid-column: span 1;
 
     background-color: var(--backgroundColor--button);
@@ -137,7 +137,7 @@ h3 {
     transform: skew(-20deg);
 }
 
-.menuPage_content--navButtonsButton p {
+.content_navButtons--Button p {
     color: var(--fontColor--button);
 
     font-size: 2rem;
@@ -147,12 +147,12 @@ h3 {
     transform: skew(20deg);
 }
 
-.menuPage_content--navButtonsButton:hover {
+.content_navButtons--Button:hover {
     background-color: var(--backgroundColor--buttonClicked);
     transform: scale(1.05);
 }
 
-.menuPage_content--navButtonsButton:hover p{
+.content_navButtons--Button:hover p{
     transform: scale(1.05);
 }
 
