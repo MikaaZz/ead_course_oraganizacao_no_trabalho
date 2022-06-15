@@ -135,3 +135,105 @@ h3 {
     color: var(--fontColor--title);
     width: 80%;
 }
+
+.content_introductionTexts--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 3rem;
+
+    padding: 1% 0;
+}
+
+.pageOne_container--hoverCards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content_hoverCards--lowerTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 2rem;
+
+    margin: 5% 0;
+}
+
+.container_hoverCards {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content_hoverCards--background {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    background-image: url(../assets/episode01/image_card--episodeOne.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin-bottom: 2%;
+    padding: 6%;
+}
+
+.content_hoverCards--backgroundTwo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    background-image: url(../assets/episode01/image_cardTwo--episodeOne.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin-bottom: 2%;
+    padding: 6%;
+}
+
+.content_hoverCards--text {
+    color: var(--fontColor--episodesTitle);
+
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+
+    opacity: 0;
+    text-align: center;
+
+    width: 50%;
+}
+
+.content_hoverCards--background:hover .content_hoverCards--text {
+    opacity: 1;
+}
+
+.content_hoverCards--backgroundTwo:hover .content_hoverCards--text {
+    opacity: 1;
+}
+
+.container_video--iframe {
+    margin: 2% auto;
+
+    height: 320px;
+    width: 560px;
+}
+
+.container_video--iframe iframe {
+    border-radius: 1rem;
+}
+
+.footer_pageOne {
+    background-color: #000;
+}
+
+.pageOne_content--paragraph {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0.33) 0%, rgba(217, 217, 217, 0) 100%);
+    color: var(--fontColor--title);
+    font-size: 1.6rem;
+    padding: 5%;
+    text-align: center;
+}
