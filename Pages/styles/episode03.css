@@ -1,0 +1,266 @@
+:root {
+    --fontColor--title--transparency: rgba(255, 255, 255, 0.8);
+    --fontColor--title: #fff;
+    --fontColor--episodesTitle: #100938;
+    --fontColor--button: #000;
+    --fontColor--white: #fff;
+
+    --borderRadius--button: 2rem 1rem;
+    --innerShadow--button: inset 5px 7px 10px rgba(0, 0, 0, 0.6);
+    --backgroundColor--button: #D9D9D9;
+    --backgroundColor--buttonClicked: #fff;
+
+    --backgroundColor--gray: #D9D9D9;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: "caviar_dreams";
+    src: url(../../Fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: "caviar_dreams_bold";
+    src: url(../../Fonts/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+    font-family: "riffic_bold";
+    src: url(../../Fonts/RifficFree-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .25s ease-in-out;
+}
+
+body {
+    background-color: var(--backgroundColor--gray);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+
+    width: 100vw;
+}
+
+main {
+    background: linear-gradient(180deg, #180E56 0%, #000000 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'riffic_bold';
+}
+
+h2 {
+    font-family: 'riffic_bold';
+}
+
+h3 {
+    font-family: 'riffic_bold';
+}
+
+.hidden {
+    display: none;
+}
+
+.header_pageTree {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url(../assets/episode03/image_background--episodeTree.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--fontColor--episodesTitle);
+
+    padding: 5% 0;
+}
+
+.pageTree_content--icon {
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    cursor: pointer;
+    font-size: 12rem;
+}
+
+.pageTree_content--icon:hover {
+    transform: scale(1.1);
+}
+
+.pageTree_content--title {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+}
+
+.pageTree_content--subtitle {
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    margin: 2%;
+}
+
+.main_pageTree {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pageTree_container--informationBlock {
+    align-items: flex-end;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto;
+    justify-content: center;
+
+    background-image: url(../assets/episode03/image_backgroundTwo--eoisodeTree.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+}
+
+.content_informationBlock--separationBar {
+    color: var(--fontColor--title);
+
+    grid-column: span 2;
+
+    margin: 5% auto;
+
+    width: 80%;
+}
+
+.content_informationBlock--lowerTitle {
+    color: var(--fontColor--white);
+
+    grid-column: span 2;
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+
+    margin: 2% 7% 5% 5%;
+
+    width: 50%;
+}
+
+.container_informationBlock--texts {
+    background-color: var(--backgroundColor--gray);
+    border-radius: 1rem 1rem 0 0;
+
+    font-family: 'caviar_dreams', sans-serif;
+
+    margin: 8% auto 0;
+    padding: 2% 2% 0 2%;
+
+    width: 40%;
+}
+
+.content_informationBlock--paragraph {
+    margin: 2%;
+    text-align: center;
+}
+
+.pageTree_container--stimulateAbility {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content_stimulateAbility--lowerTitle {
+    color: var(--fontColor--white);
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+
+    margin: 5%;
+}
+
+.container_stimulateAbility--imageAndText {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content_stimulateAbility--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 3rem;
+
+    margin: 1% 0;
+
+    text-align: left;
+
+    width: 50%;
+}
+
+.content_stimulateAbility--image {
+    border-radius: 1rem;
+}
+
+.footer_pageTree {
+    background-color: #000;
+}
+
+.pageTree_content--paragraph {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0.33) 0%, rgba(217, 217, 217, 0) 100%);
+    color: var(--fontColor--title);
+    font-size: 1.6rem;
+    padding: 5%;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .pageTree_content--title {
+        text-align: center;
+        margin: 0 2%;
+    }
+
+    .pageTree_content--subtitle {
+        text-align: center;
+    }
+
+    .content_informationBlock--lowerTitle {
+        margin: 2% auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .container_informationBlock--texts {
+        width: 60%;
+    }
+
+    .container_stimulateAbility--imageAndText {
+        flex-direction: column;
+    }
+
+    .content_stimulateAbility--upperTitle {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .pageTree_content--title {
+        font-size: 3.25rem;
+    }
+    .content_stimulateAbility--image {
+        width: 280px;
+    }
+    .container_informationBlock--texts {
+        width: 70%;
+    }
+}

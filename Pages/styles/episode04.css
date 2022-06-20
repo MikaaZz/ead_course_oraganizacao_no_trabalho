@@ -1,0 +1,846 @@
+:root {
+    --fontColor--title--transparency: rgba(255, 255, 255, 0.8);
+    --fontColor--title: #fff;
+    --fontColor--episodesTitle: #100938;
+    --fontColor--button: #000;
+    --fontColor--white: #fff;
+
+    --borderRadius--button: 2rem 1rem;
+    --innerShadow--button: inset 5px 7px 10px rgba(0, 0, 0, 0.6);
+    --backgroundColor--button: #D9D9D9;
+    --backgroundColor--buttonClicked: #fff;
+
+    --backgroundColor--gray: #D9D9D9;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: "caviar_dreams";
+    src: url(../../Fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: "caviar_dreams_bold";
+    src: url(../../Fonts/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+    font-family: "riffic_bold";
+    src: url(../../Fonts/RifficFree-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .25s ease-in-out;
+}
+
+body {
+    background-color: var(--backgroundColor--gray);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+
+    width: 100vw;
+}
+
+main {
+    background: linear-gradient(180deg, #180E56 0%, #000000 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'riffic_bold';
+}
+
+h2 {
+    font-family: 'riffic_bold';
+}
+
+h3 {
+    font-family: 'riffic_bold';
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.header_pageFour {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url(../assets/episode04/image_background--episodeFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--fontColor--episodesTitle);
+
+    padding: 5% 0;
+}
+
+.pageFour_content--icon {
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    cursor: pointer;
+    font-size: 12rem;
+}
+
+.pageFour_content--icon:hover {
+    transform: scale(1.1);
+}
+
+.pageFour_content--title {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+
+    text-align: center;
+}
+
+.pageFour_content--subtitle {
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    margin: 2%;
+
+    text-align: center;
+}
+
+.main_pageFour {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pageFour_content--lowerTitle {
+    color: var(--fontColor--white);
+
+
+    font-size: 1.6rem;
+    font-weight: 100;
+
+    margin: 2% auto;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.pageFour_container--interactionButtons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content_interactionButtons--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 3rem;
+
+    margin: 1% 0;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.content_interactionButtons--lowerTitle {
+    color: var(--fontColor--white);
+
+    font-size: 1.6rem;
+    font-weight: 100;
+
+    margin: 1% auto;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.content_interactionButtons--separationBar {
+    color: var(--fontColor--title);
+    width: 80%;
+}
+
+.container_interactionButtons--buttons {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, auto);
+
+    margin: 2% auto;
+}
+
+.content_interactionButtons--buttons {
+    grid-column: span 1;
+
+    background-color: var(--backgroundColor--button);
+
+    box-shadow: inset 5px 7px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 2rem 1rem;
+    border: none;
+
+    cursor: pointer;
+
+    height: 10rem;
+    width: 16rem;
+
+    transform: skew(-20deg);
+}
+
+.content_interactionButtons--iconImage {
+    transform: skew(20deg);
+}
+
+.content_interactionButtons--buttons:hover {
+    background-color: var(--backgroundColor--buttonClicked);
+}
+
+.container_interactionButtons--buttonOne {
+    background-image: url(../assets/episode04/image_backgroundInteractionButtons--episodeFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, auto);
+
+    margin: 2% auto;
+
+    width: 100%;
+}
+
+.content_buttonOne--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 3rem;
+
+    grid-column: span 2;
+
+    margin: 1% auto;
+    text-align: center;
+}
+
+.content_buttonOne--separationBar {
+    color: var(--fontColor--title);
+
+    grid-column: span 2;
+
+    margin: 2% auto;
+
+    width: 80%;
+}
+
+.content_buttonOne--lowerTitle {
+    color: var(--fontColor--white);
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 100;
+
+    grid-column: span 2;
+
+    margin: 2% auto;
+    text-align: center;
+
+    width: 90%;
+}
+
+.container_buttonOne--card {
+    background-color: var(--backgroundColor--gray);
+    border-radius: 1rem;
+
+    justify-content: center;
+
+    margin: 2% auto 5%;
+    padding: 2%;
+
+    height: 12rem;
+    width: 50%;
+}
+
+.content_buttonOne--paragraph {
+    color: var(--fontColor--button);
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+
+    text-align: center;
+}
+
+.container_interactionButtons--buttonTwo {
+    background-image: url(../assets/episode04/image_backgroundInteractionButtons--episodeFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 2% auto;
+
+    width: 100%;
+}
+
+.content_buttonTwo--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 3rem;
+
+    margin: 1% auto;
+    text-align: center;
+}
+
+.content_buttonTwo--separationBar {
+    color: var(--fontColor--title);
+    margin: 2% auto;
+    width: 80%;
+}
+
+.container_buttonTwo--videoList {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content_buttonTwo--video {
+    margin: 2%;
+
+    height: 320px;
+    width: 560px;
+}
+
+.content_buttonTwo--video iframe {
+    border-radius: 1rem;
+}
+
+.container_buttonTwo--list {
+    margin-left: 2%;
+    width: 40%;
+}
+
+.content_buttonTwo--item {
+    color: var(--fontColor--white);
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.content_buttonTwo--paragraph {
+    color: var(--fontColor--white);
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 100;
+
+    margin: 2% auto;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.container_interactionButtons--buttonTree {
+    background-image: url(../assets/episode04/image_backgroundInteractionButtons--episodeFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 2% auto;
+
+    width: 100%;
+}
+
+.content_buttonTree--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 3rem;
+
+    margin: 1% auto;
+    text-align: center;
+}
+
+.content_buttonTree--separationBar {
+    color: var(--fontColor--title);
+
+    margin: 2% auto;
+    width: 80%;
+}
+
+.content_buttonTree--lowerTitle {
+    color: var(--fontColor--white);
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 100;
+
+    margin: 2% auto;
+    text-align: center;
+
+    width: 90%;
+}
+
+.container_buttonTree--contents {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+
+    margin: 2% auto;
+
+    width: 80%;
+}
+
+.container_buttonTree--card {
+    background-color: var(--backgroundColor--gray);
+    border-radius: 1rem;
+
+    align-items: center;
+    display: flex;
+
+    grid-column: span 1;
+
+    justify-content: center;
+
+    margin: auto;
+    padding: 2%;
+
+    height: 12rem;
+}
+
+.cardTree {
+    grid-column: span 2;
+}
+
+.content_buttonTree--paragraph {
+    color: var(--fontColor--button);
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+
+    text-align: center;
+}
+
+.container_interactionButtons--buttonFour {
+    background-image: url(../assets/episode04/image_backgroundInteractionButtons--episodeFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+
+    gap: 1rem;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, auto);
+
+    margin: 2% auto;
+    padding: 2% 0;
+
+    width: 100%;
+}
+
+.content_buttonFour--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 3rem;
+
+    grid-column: span 2;
+
+    margin: 2% auto 0;
+    text-align: center;
+
+    width: 90%;
+}
+
+.content_buttonFour--separationBar {
+    color: var(--fontColor--title);
+    margin: 1% auto;
+    width: 80%;
+
+    grid-column: span 2;
+}
+
+.content_buttonFour--image {
+    border-radius: 1rem;
+
+    grid-column: span 1;
+    grid-row: span 2;
+
+    margin: 0 auto;
+}
+
+.content_buttonFour--paragraph {
+    color: var(--fontColor--white);
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+
+    grid-column: span 1;
+    grid-row: span 1;
+
+    text-align: left;
+
+    width: 80%;
+}
+
+.pageFour_container--quickTips {
+    background: rgba(255, 255, 255, 0.195);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+
+    margin: 2% auto;
+
+    width: 90%;
+}
+
+.content_quickTips--image {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
+    box-shadow: -5px 10px 13px 0px rgba(0, 0, 0, 0.245), 5px 5px 10px 5px rgba(0, 0, 0, 0);
+
+    border-radius: 2rem;
+
+    margin: 2% 0;
+    width: 300px;
+}
+
+.container_quickTips--texts {
+    color: var(--fontColor--white);
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto;
+
+    margin: 2% 0;
+
+    width: 50%;
+}
+
+.content_quickTips--title {
+    align-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
+
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    font-weight: 300;
+
+    grid-column: span 1;
+
+    text-align: right;
+}
+
+.content_quickTips--icon {
+    font-size: 3rem;
+    margin-right: 2%;
+}
+
+.content_quickTips--paragraph {
+    color: var(--fontColor--white);
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+
+    text-align: right;
+
+    width: 100%;
+}
+
+.pageFour_container--readingTip {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+
+    margin: 2% auto;
+}
+
+.container_readingTip--text {
+    color: var(--fontColor--white);
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto;
+
+    width: 50%;
+}
+
+.content_readingTip--title {
+    align-content: center;
+    display: flex;
+
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    font-weight: 300;
+
+    grid-column: span 1;
+}
+
+.content_readingTip--icon {
+    font-size: 3rem;
+    margin-left: 2%;
+}
+
+.content_readingTip--paragraph {
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    width: 80%;
+}
+
+.pageFour_container--resume {
+    background-image: url(../assets/episode04/image_backgroundTree--episodeFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 5% 0;
+
+    width: 100%;
+}
+
+.content_resume--paragraph {
+    color: var(--fontColor--white);
+
+    font-family: 'caviar_dreams', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 100;
+
+    margin: 5% auto;
+    text-align: center;
+
+    width: 90%;
+}
+
+.footer_pageFour {
+    background-color: #000;
+}
+
+.pageFour_content--paragraph {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0.33) 0%, rgba(217, 217, 217, 0) 100%);
+    color: var(--fontColor--title);
+    font-size: 1.6rem;
+    padding: 5%;
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    .content_interactionButtons--buttons {
+        height: 8rem;
+        width: 12rem;
+    }
+
+    .content_interactionButtons--iconImage {
+        width: 4rem;
+    }
+
+    .content_buttonFour--image {
+        width: 400px;
+    }
+
+    .container_buttonOne--card {
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content_interactionButtons--buttons {
+        height: 5rem;
+        width: 8rem;
+    }
+
+    .content_interactionButtons--iconImage {
+        width: 2rem;
+    }
+
+    .container_buttonOne--card {
+        height: 20rem;
+
+        padding: 5%;
+    }
+
+    .content_buttonFour--image {
+        width: 350px;
+    }
+
+    .pageFour_container--quickTips {
+        width: 95%;
+    }
+
+    .content_quickTips--title {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .pageFour_content--title {
+        font-size: 3.25rem;
+    }
+
+    .content_interactionButtons--buttons {
+        height: 3rem;
+        width: 5rem;
+    }
+
+    .content_interactionButtons--iconImage {
+        width: 1rem;
+    }
+
+    .container_buttonOne--card {
+        grid-column: span 2;
+
+        justify-content: flex-start;
+
+        margin: 2% auto;
+
+        height: 18rem;
+    }
+
+    .container_buttonTwo--videoList {
+        flex-direction: column;
+    }
+
+    .content_buttonTwo--video {
+        height: 250px;
+        width: 350px;
+    }
+
+    .container_buttonTwo--list {
+        margin: 2% auto;
+        width: 90%;
+    }
+
+    .container_buttonTree--card {
+        height: 18rem;
+    }
+
+    .content_buttonFour--image {
+        grid-column: span 2;
+    }
+
+    .content_buttonFour--paragraph {
+        grid-column: span 2;
+        margin: auto;
+        text-align: center;
+    }
+
+    .pageFour_container--quickTips {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .container_quickTips--texts {
+        width: 90%;
+    }
+
+    .content_quickTips--title {
+        align-content: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .content_quickTips--paragraph {
+        text-align: center;
+    }
+
+    .pageFour_container--readingTip {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container_readingTip--text {
+        margin: 2% auto;
+        width: 90%;
+    }
+
+    .content_readingTip--title {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .content_readingTip--paragraph {
+        margin: 2% auto;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container_interactionButtons--buttons {
+        gap: .5rem;
+    }
+
+    .content_interactionButtons--buttons {
+        height: 2.5rem;
+        width: 4rem;
+    }
+
+    .container_buttonTree--card {
+        height: 22rem;
+        grid-column: span 2;
+    }
+
+    .content_buttonFour--image {
+        margin: 2% auto;
+        width: 280px;
+    }
+
+    .content_buttonTwo--video {
+        height: 150px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .content_interactionButtons--upperTitle  {
+        font-size: 2rem;
+    }
+
+    .content_buttonOne--upperTitle {
+        font-size: 2rem;
+    }
+
+    .content_buttonTwo--upperTitle {
+        font-size: 2rem;
+    }
+
+    .content_buttonTree--upperTitle {
+        font-size: 2rem;
+    }
+
+    .content_buttonFour--upperTitle {
+        font-size: 2rem;
+    }
+
+    .container_buttonTwo--list {
+        list-style: none;
+        text-align: center;
+    }
+
+    .content_buttonFour--image {
+        width: 250px;
+    }
+}
