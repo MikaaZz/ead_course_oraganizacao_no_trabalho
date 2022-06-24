@@ -4,7 +4,7 @@ const mainIcon = document.querySelector(".pageTwo_content--icon");
 const mainTitle = document.querySelector(".pageTwo_content--title");
 const mainSubTitle = document.querySelector(".pageTwo_content--subtitle");
 
-const mainVideoDiv = document.querySelector(".pageOne_background--iframe");
+const mainVideoDiv = document.querySelector(".pageTwo_background--iframe");
 const mainVideo = document.querySelector("#video");
 
 

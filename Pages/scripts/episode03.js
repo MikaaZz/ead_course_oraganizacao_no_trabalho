@@ -5,7 +5,7 @@ const mainTitle = document.querySelector(".pageTree_content--title");
 const mainTitleTwo = document.querySelector(".titleTwo");
 const mainSubTitle = document.querySelector(".pageTree_content--subtitle");
 
-const mainVideoDiv = document.querySelector(".pageOne_background--iframe");
+const mainVideoDiv = document.querySelector(".pageTree_background--iframe");
 const mainVideo = document.querySelector("#video");
 
 function playVideo() {
