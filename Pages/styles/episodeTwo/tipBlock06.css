@@ -1,0 +1,145 @@
+.container_tips--tipSix {
+    background-image: url(../../assets/episode02/backgroundImage_tipSix--episodeTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+
+    grid-template-areas:
+        "titleTipSix titleTipSix"
+        "separationBarTipSix separationBarTipSix"
+        "textOneTipSix textTwoTipSix"
+        "cardsTipSix cardsTipSix"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+}
+
+.content_tipSix--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 2rem;
+
+    grid-area: titleTipSix;
+
+    margin: 1% auto;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.content_tipSix--separationBar {
+    grid-area: separationBarTipSix;
+
+    color: var(--fontColor--title);
+
+    margin: auto;
+
+    width: 80%;
+}
+
+.content_tipSix--paragraph {
+    color: var(--fontColor--title);
+
+
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    margin: 2% auto;
+
+    width: 80%;
+}
+
+.textOne--tipSix {
+    grid-area: textOneTipSix;
+    text-align: left;
+}
+
+.textTwo--tipSix {
+    grid-area: textTwoTipSix;
+    text-align: right;
+}
+
+.container_tipSix--cards {
+
+    display: grid;
+
+    gap: 1rem;
+    grid-area: cardsTipSix;
+
+    grid-template-areas:
+        "textCardOneTipSix textCardTwoTipSix"
+        "textCardTreeTipSix textCardFourTipSix"
+    ;
+
+    margin: 2% auto;
+}
+
+.container_tipSix--card {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+
+    background-color: var(--backgroundColor--gray);
+    border-radius: 1rem;
+
+
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    padding: 2%;
+    margin: auto;
+
+    height: 8rem;
+    width: 80%;
+}
+
+.textCardOne--tipSix {
+    grid-area: textCardOneTipSix;
+}
+
+.textCardTwo--tipSix {
+    grid-area: textCardTwoTipSix;
+}
+
+.textCardTree--tipSix {
+    grid-area: textCardTreeTipSix;
+}
+
+.textCardFour--tipSix {
+    grid-area: textCardFourTipSix;
+}
+
+.content_tipSix--text {
+    text-align: center;
+}
+
+@media screen and (max-width:425px) {
+    .container_tips--tipSix {
+        grid-template-areas:
+            "titleTipSix titleTipSix"
+            "separationBarTipSix separationBarTipSix"
+            "textOneTipSix textOneTipSix"
+            "textTwoTipSix textTwoTipSix"
+            "cardsTipSix cardsTipSix"
+        ;
+    }
+
+    .content_tipSix--paragraph {
+        text-align: center;
+    }
+
+    .container_tipSix--cards {
+        grid-template-areas:
+            "textCardOneTipSix textCardOneTipSix"
+            "textCardTwoTipSix textCardTwoTipSix"
+            "textCardTreeTipSix textCardTreeTipSix"
+            "textCardFourTipSix textCardFourTipSix"
+        ;
+    }
+}

@@ -1,0 +1,161 @@
+.container_tips--tipOne {
+    align-items: center;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+
+    display: grid;
+    grid-template-areas:
+        "titleTipOne titleTipOne"
+        "textTipOne buttonsTipOne"
+        "textClickOneTipOne textClickTwoTipOne"
+        "textClickTreeTipOne .";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    width: 100%;
+}
+
+.content_tipOne--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 2rem;
+
+    grid-area: titleTipOne;
+
+    margin: 1% auto;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.content_tipOne--paragraph {
+    color: var(--fontColor--title);
+
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    grid-area: textTipOne;
+
+    margin: auto;
+
+    width: 80%;
+}
+
+.container_tipOne--buttons {
+    background-image: url(../../assets/episode02/map_imagemTipOne--episodeTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: grid;
+
+    grid-area: buttonsTipOne;
+
+    grid-template-areas:
+        "buttonOneTipOne . . ."
+        ". . . ."
+        ". . . buttonTwoTipOne"
+        ". buttonTreeTipOne . .";
+
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+
+    margin: auto;
+}
+
+.content_tipOne--button {
+    cursor: pointer;
+
+    background-color: var(--backgroundColor--blue);
+    border-radius: 50%;
+    border: 1rem solid var(--backgroundColor--gray);
+
+    margin: 2rem;
+    padding:.5rem;
+
+    height:1rem;
+    width:1rem;
+}
+
+.content_tipOne--buttonOne {
+    grid-area: buttonOneTipOne;
+}
+
+.content_tipOne--buttonTwo {
+    grid-area: buttonTwoTipOne;
+}
+
+.content_tipOne--buttonTree {
+    grid-area: buttonTreeTipOne;
+}
+
+.container_tipOne--buttonOpen {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content_tipOne--buttoOpen {
+    background-color: var(--backgroundColor--gray);
+    color: var(--fontColor--button);
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 2rem;
+    clip-path: polygon(0 5%, 100% 0%, 1000% 100%, 0 100%);
+
+
+    font-size: 1rem;
+    font-weight: 300;
+
+    margin: 1% auto;
+
+    text-align: center;
+
+    height: 14rem;
+    width: 24rem;
+}
+
+.textClickOneTipOne {
+    grid-area:textClickOneTipOne ;
+}
+
+.textClickTwoTipOne {
+    grid-area:textClickTwoTipOne ;
+}
+
+.textClickTreeTipOne {
+    grid-area:textClickTreeTipOne ;
+}
+
+.content_tipOne--buttoOpen p {
+    width: 80%;
+}
+
+@media screen and (max-width:425px) {
+    .container_tips--tipOne {
+        grid-template-areas:
+        "titleTipOne titleTipOne"
+        "textTipOne textTipOne"
+        "buttonsTipOne buttonsTipOne"
+        "textClickOneTipOne textClickOneTipOne"
+        "textClickTwoTipOne textClickTwoTipOne"
+        "textClickTreeTipOne textClickTreeTipOne";
+    }
+
+    .content_tipOne--paragraph {
+        margin: 2% auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .content_tipOne--button {
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,172 @@
+.container_tips--tipTwo {
+    background-image: url(../../assets/episode02/backgroundImage_tipTwo--episodeTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+
+    grid-template-areas:
+        "titletipTwo titletipTwo"
+        "textOnetipTwo buttonstipTwo"
+        "textTwotipTwo buttonstipTwo"
+        "textTreetipTwo buttonstipTwo"
+        "tipTwoButtonOpen tipTwoButtonOpen";
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+}
+
+.content_tipTwo--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 2rem;
+
+    grid-area: titletipTwo;
+
+    margin: 1% auto;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.content_tipTwo--paragraph {
+    color: var(--fontColor--title);
+
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    margin: 2% auto;
+
+    width: 80%;
+}
+
+.textOneTipTwo {
+    grid-area: textOnetipTwo;
+}
+
+.textTwoTipTwo {
+    grid-area: textTwotipTwo;
+}
+
+.textTreeTipTwo {
+    grid-area: textTreetipTwo;
+}
+
+.container_tipTwo--buttons {
+
+    display: grid;
+
+    grid-area: buttonstipTwo;
+
+    grid-template-areas:
+        ". . . buttonOnetipTwo  . ."
+        "buttonTwotipTwo . . . . ."
+        ". . . . buttonTreetipTwo ."
+        ". . buttonFourtipTwo . . .";
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+}
+
+.content_tipTwo--button {
+    cursor: pointer;
+
+    background-color: var(--backgroundColor--blue);
+    border-radius: 50%;
+    border: 1rem solid var(--backgroundColor--gray);
+
+    padding:.5rem;
+
+    height:1rem;
+    width:1rem;
+}
+
+.content_tipTwo--buttonOne {
+    grid-area: buttonOnetipTwo;
+}
+
+.content_tipTwo--buttonTwo {
+    grid-area: buttonTwotipTwo;
+}
+
+.content_tipTwo--buttonTree {
+    grid-area: buttonTreetipTwo;
+}
+
+.content_tipTwo--buttonFour {
+    grid-area: buttonFourtipTwo;
+}
+
+.container_tipTwo--buttonOpen {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    grid-area: tipTwoButtonOpen;
+
+    
+}
+
+.container_tipTwo--twoButtons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content_tipTwo--buttoOpen {
+    background-color: var(--backgroundColor--gray);
+    color: var(--fontColor--button);
+
+
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 2rem;
+    clip-path: polygon(0 5%, 100% 0%, 1000% 100%, 0 100%);
+
+
+    font-size: 1rem;
+    font-weight: 300;
+
+    margin: 1% auto;
+
+    text-align: center;
+
+    height: 14rem;
+    width: 24rem;
+}
+
+.content_tipTwo--buttoOpen p {
+    width: 80%;
+}
+
+@media screen and (max-width:425px) {
+    .container_tips--tipTwo {
+        grid-template-areas:
+        "titletipTwo titletipTwo"
+        "textOnetipTwo textOnetipTwo"
+        "textTwotipTwo textTwotipTwo"
+        "textTreetipTwo textTreetipTwo"
+        "buttonstipTwo buttonstipTwo"
+        "textClickOnetipTwo textClickOnetipTwo"
+        "textClickTwotipTwo textClickTwotipTwo"
+        "textClickTreetipTwo textClickTreetipTwo"
+        "textClickFourtipTwo textClickFourtipTwo";
+    }
+
+    .container_tipTwo--buttons {
+        margin: 2% 0;
+    }
+
+    .content_tipTwo--button {
+        margin: auto;
+    }
+}

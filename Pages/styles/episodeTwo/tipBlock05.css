@@ -1,0 +1,115 @@
+.container_tips--tipFive {
+    align-items: flex-start;
+
+    background-image: url(../../assets/episode02/backgroundImage_tipFive--episodeTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+
+    grid-template-areas:
+        "titleTipFive titleTipFive"
+        "textTipFive imageTipFive"
+        "lowerTitleTipFive imageTipFive"
+        "buttonInteractionTipFive imageTipFive";
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+}
+
+.content_tipFive--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 2rem;
+
+    grid-area: titleTipFive;
+
+    margin: 1% auto;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.content_tipFive--paragraph {
+    color: var(--fontColor--title);
+
+
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    grid-area: textTipFive;
+
+    margin: 2% auto;
+
+    width: 80%;
+}
+
+.content_tipFive--lowerTitle {
+    grid-area: lowerTitleTipFive;
+
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-family: 'riffic_bold';
+
+    margin: 1% auto;
+
+    text-align: left;
+
+    width: 80%;
+}
+
+.content_tipFive--button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+
+    background-color: var(--backgroundColor--blue);
+    border-radius: 50%;
+    border: 1rem solid var(--backgroundColor--gray);
+
+    color: var(--fontColor--title);
+
+    grid-area: buttonInteractionTipFive;
+
+    font-size: 2rem;
+    font-family: 'riffic_bold';
+
+    margin-left: 4rem;
+    padding: 1.5rem;
+
+    height: 4rem;
+    width: 4rem;
+}
+
+.content_tipFive--image {
+    grid-area: imageTipFive;
+    margin: 2% auto;
+    width: 300px;
+}
+
+@media screen and (max-width:425px) {
+    .container_tips--tipFive {
+        grid-template-areas:
+            "titleTipFive titleTipFive"
+            "textTipFive textTipFive"
+            "lowerTitleTipFive lowerTitleTipFive"
+            "buttonInteractionTipFive buttonInteractionTipFive"
+            "imageTipFive imageTipFive";
+    }
+    .content_tipFive--paragraph {
+        text-align: center;
+    }
+    .content_tipFive--lowerTitle {
+        text-align: center;
+    }
+    .content_tipFive--button {
+        margin: 2% auto;
+    }
+}

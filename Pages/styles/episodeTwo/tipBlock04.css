@@ -1,0 +1,151 @@
+.container_tips--tipFour {
+    background-image: url(../../assets/episode02/backgroundImage_tipFour--episodeTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+
+    grid-template-areas: 
+    "titleTipFour titleTipFour"
+    "textOneTipFour textBlockTipFour"
+    "checkListTipFour textBlockTipFour"
+    "lowerTitleTipFour textBlockTipFour"
+    "textTwoTipFour textTwoTipFour";
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+}
+
+.content_tipFour--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 2rem;
+
+    grid-area: titleTipFour;
+
+    margin: 1% auto;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.content_tipFour--paragraph {
+    color: var(--fontColor--title);
+
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    margin: 2% auto;
+
+    width: 80%;
+}
+
+.textOneTipFour {
+    grid-area: textOneTipFour;
+}
+
+.textTwoTipFour {
+    grid-area: textTwoTipFour;
+}
+
+.container_tipFour--checkList {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    grid-area: checkListTipFour;
+
+    margin: 2% auto;
+
+    width: 80%;
+}
+
+.container_tipFour--checkBox {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content_tipFour--checkBox {
+    color: var(--fontColor--white);
+}
+
+.content_tipFour--text {
+    color: var(--fontColor--white);
+}
+
+.content_tipFour--lowerTitle {
+    grid-area: lowerTitleTipFour;
+
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-family: 'riffic_bold';
+
+    margin: 1% auto;
+
+    text-align: left;
+
+    width: 80%;
+}
+
+.container_tipFour--textBlock {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    grid-area: textBlockTipFour;
+
+    background-color: #47445B;
+    box-shadow: var(--innerShadow--button);
+    border-radius: 2rem;
+    color: var(--fontColor--white);
+
+    margin: 2% auto;
+
+    width: 80%;
+}
+
+.container_tipFour--list {
+    
+
+    margin: 2% auto;
+    
+    width: 80%;
+}
+
+.content_tipFour--item {
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    margin: 2%;
+}
+
+@media screen and (max-width:425px) {
+    .container_tips--tipFour {
+        grid-template-areas: 
+    "titleTipFour titleTipFour"
+    "textOneTipFour textOneTipFour"
+    "checkListTipFour checkListTipFour"
+    "lowerTitleTipFour lowerTitleTipFour"
+    "textBlockTipFour textBlockTipFour"
+    "textTwoTipFour textTwoTipFour"
+    ;
+    }
+    .content_tipFour--paragraph {
+        text-align: center;
+    }
+    .content_tipFour--lowerTitle {
+        text-align: center;
+    }
+}

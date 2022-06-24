@@ -13,15 +13,21 @@
 
 <body class="body_background--image">
 
-    <header class="header_pageOne">
+    <header class="header_pageOne padding_header">
 
-        <span class="pageOne_content--icon material-symbols-outlined">
+        <span class="pageOne_content--icon material-symbols-outlined " onclick="playVideo()">
             play_arrow
         </span>
 
-        <h1 class="pageOne_content--title">Importância da</h1>
+        <h1 class="pageOne_content--title ">Importância da</h1>
 
-        <h2 class="pageOne_content--subtitle">organização no trabalho</h2>
+        <h2 class="pageOne_content--subtitle ">organização no trabalho</h2>
+
+        <div class="pageOne_background--iframe hidden">
+            <video id="video" src="assets/episode01/Episodio01_Cena_01_capa.mp4" width="100%" height="100%"></video>
+
+        </div>
+
 
     </header>
 
@@ -44,13 +50,15 @@
             <div class="container_hoverCards">
 
                 <div class="content_hoverCards--background">
-                    <p class="content_hoverCards--text">Antigamente, as pessoas se organizavam para encontrar comida, água e abrigo. A organização em si
+                    <p class="content_hoverCards--text">Antigamente, as pessoas se organizavam para encontrar comida,
+                        água e abrigo. A organização em si
                         não diz respeito apenas ao espaço físico, mas também ao espaço mental no qual funcionamos
                         melhor.</p>
                 </div>
 
                 <div class="content_hoverCards--backgroundTwo">
-                    <p class="content_hoverCards--text">A importância da organização no trabalho tem aumentado com a crescente quantidade de tarefas e
+                    <p class="content_hoverCards--text">A importância da organização no trabalho tem aumentado com a
+                        crescente quantidade de tarefas e
                         responsabilidades que são atribuídas aos colaboradores a um ritmo cada vez maior.</p>
                 </div>
 
@@ -60,19 +68,22 @@
 
         <section class="container_video--iframe">
 
-            <iframe src="https://player.vimeo.com/video/719931050?h=693430b331" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
+            <iframe src="https://player.vimeo.com/video/723850503?h=e11b4a6394" width="100%" height="100%"
+                frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            
         </section>
 
     </main>
 
     <footer class="footer_pageOne">
 
-        <p class="pageOne_content--paragraph">No próximo episódio, vou te mostrar algumas dicas de como iniciar sua organização no ambiente corporativo.
+        <p class="pageOne_content--paragraph">No próximo episódio, vou te mostrar algumas dicas de como iniciar sua
+            organização no ambiente corporativo.
             Vamos lá?</p>
 
     </footer>
 
+    <script src="./scripts/episode01.js"></script>
 </body>
 
 </html>

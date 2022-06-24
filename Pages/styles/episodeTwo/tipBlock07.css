@@ -1,0 +1,249 @@
+.container_tips--tipSeven {
+    background-image: url(../../assets/episode02/backgroundImage_tipSeven--episodeTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+
+    grid-template-areas:
+        "titleTipSeven titleTipSeven titleTipSeven"
+        "separationBarTipSeven separationBarTipSeven separationBarTipSeven"
+        "paragraphOneTipSeven paragraphOneTipSeven paragraphOneTipSeven"
+        "cardsBlockTipSeven cardsBlockTipSeven cardsBlockTipSeven"
+        "paragraphTwoTipSeven paragraphTreeTipSeven paragraphFourTipSeven"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100%;
+}
+
+.content_tipSeven--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 2rem;
+
+    grid-area: titleTipSeven;
+
+    margin: 1% auto;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.content_tipSeven--separationBar {
+    grid-area: separationBarTipSix;
+
+    color: var(--fontColor--title);
+
+    grid-area: separationBarTipSeven;
+
+    margin: auto;
+
+    width: 80%;
+}
+
+.content_tipSeven--paragraph {
+    color: var(--fontColor--title);
+
+
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    margin: 2% auto;
+
+    text-align: center;
+
+    width: 80%;
+}
+
+.paragraphOne--tipSeven {
+    grid-area: paragraphOneTipSeven;
+}
+
+.paragraphTwo--tipSeven {
+    grid-area: paragraphTwoTipSeven;
+}
+
+.paragraphTree--tipSeven {
+    grid-area: paragraphTreeTipSeven;
+}
+
+.paragraphFour--tipSeven {
+    grid-area: paragraphFourTipSeven;
+}
+
+.container_tipSeven--cards {
+    display: grid;
+    grid-area: cardsBlockTipSeven;
+    grid-template-areas:
+        "cardOneTipSeven cardTwoTipSeven cardTreeTipSeven"
+        "textBlockOneTipSeven textBlockTwoTipSeven textBlockTreeTipSeven"
+    ;
+
+    margin: 2% auto;
+
+    width: 90%;
+}
+
+.content_tipSeven--card {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--backgroundColor--gray);
+    color: var(--backgroundColor--blue);
+
+    border-radius: 1rem;
+    box-shadow: var(--innerShadow--button);
+
+    margin: 0 auto;
+    padding: 2%;
+
+    text-align: center;
+    transform: skew(-20deg);
+
+    height: 4rem;
+    width: 40%;
+}
+
+.cardOne--tipSeven {
+    grid-area: cardOneTipSeven;
+}
+
+.cardTwo--tipSeven {
+    grid-area: cardTwoTipSeven;
+}
+
+.cardTree--tipSeven {
+    grid-area: cardTreeTipSeven;
+}
+
+.content_tipSeven--icon {
+    font-size: 4rem;
+    transform: skew(20deg);
+}
+
+.container_tipSeven--textBlock {
+    background-color: var(--backgroundColor--gray);
+    border-radius: 0 0 1rem 1rem;
+
+    margin: 0 auto;
+
+    right: 0.8rem;
+    position: relative;
+
+    width: 40%;
+}
+
+.container_tipSeven--textBlock:hover .content_tipSeven--text {
+    opacity: 0;
+}
+
+.container_tipSeven--textBlock:hover .content_tipSeven--textHover {
+    opacity: 1;
+}
+
+.textBlockOne--tipSeven {
+    grid-area: textBlockOneTipSeven;
+}
+
+.textBlockTwo--tipSeven {
+    grid-area: textBlockTwoTipSeven;
+}
+
+.textBlockTree--tipSeven {
+    grid-area: textBlockTreeTipSeven;
+}
+
+.content_tipSeven--text {
+    margin: 2% auto;
+    text-align: center;
+    width: 80%;
+}
+
+.content_tipSeven--textHover {
+    opacity: 0;
+
+    margin: 2% auto;
+    text-align: center;
+    width: 80%;
+}
+
+@media screen and (max-width:1024px) {
+    .content_tipSeven--card {
+        width: 60%
+    }
+
+    .container_tipSeven--textBlock {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content_tipSeven--card {
+        width: 70%
+    }
+
+    .container_tipSeven--textBlock {
+        width: 70%;
+    }
+
+    .container_tipSeven--textBlock:hover .content_tipSeven--text {
+        opacity: 1;
+    }
+
+    .container_tipSeven--textBlock:hover .content_tipSeven--textHover {
+        opacity: 1;
+    }
+
+    .content_tipSeven--text {
+        margin: 2% auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .content_tipSeven--textHover {
+        opacity: 1;
+
+        margin: 5% auto;
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container_tips--tipSeven {
+        grid-template-areas:
+            "titleTipSeven titleTipSeven titleTipSeven"
+            "separationBarTipSeven separationBarTipSeven separationBarTipSeven"
+            "paragraphOneTipSeven paragraphOneTipSeven paragraphOneTipSeven"
+            "cardsBlockTipSeven cardsBlockTipSeven cardsBlockTipSeven"
+            "paragraphTwoTipSeven paragraphTwoTipSeven paragraphTwoTipSeven"
+            "paragraphTreeTipSeven paragraphTreeTipSeven paragraphTreeTipSeven"
+            "paragraphFourTipSeven paragraphFourTipSeven paragraphFourTipSeven"
+        ;
+    }
+
+    .container_tipSeven--cards {
+        grid-template-areas:
+            "cardOneTipSeven cardOneTipSeven cardOneTipSeven"
+            "textBlockOneTipSeven textBlockOneTipSeven textBlockOneTipSeven"
+            "cardTwoTipSeven cardTwoTipSeven cardTwoTipSeven"
+            "textBlockTwoTipSeven textBlockTwoTipSeven textBlockTwoTipSeven"
+            "cardTreeTipSeven cardTreeTipSeven cardTreeTipSeven"
+            "textBlockTreeTipSeven textBlockTreeTipSeven textBlockTreeTipSeven"
+        ;
+    }
+    
+    .content_tipSeven--card {
+        margin-top:2% ;
+    }
+
+    .container_tipSeven--textBlock {
+        margin-bottom: 2%;
+    }
+
+}

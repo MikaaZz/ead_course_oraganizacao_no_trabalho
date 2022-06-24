@@ -10,9 +10,10 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <!--
-        <script src="./JScript/API.js"></script>
-    -->
+
+    <script src="./API.js"></script>
+
+
 
 </head>
 
@@ -22,68 +23,165 @@
 
         <h1 class="menuPage_content--title">Organização</h1>
         <h2 class="menuPage_content--subtitle">no ambiente <strong
-                class="menuPage_content--subtitleStrong">corporativo</strong></h2>
+            class="menuPage_content--subtitleStrong">corporativo</strong></h2>
 
     </header>
 
     <main class="main_menuPage">
 
         <nav class="menuPage_container--navButtons">
-            
-                <button class="content_navButtons--Button" onclick="goToNextPage(0)"><p>Episódio 1</p></button>
-                <button class="content_navButtons--Button" onclick="goToNextPage(1)"><p>Episódio 2</p></button>
-            
-                <button class="content_navButtons--Button" onclick="goToNextPage(2)"><p>Episódio 3</p></button>
-                <button class="content_navButtons--Button" onclick="goToNextPage(3)"><p>Episódio 4</p></button>
-            
+
+            <button class="content_navButtons--Button" onclick="goPage(0)">
+                <p>Episódio 1</p>
+            </button>
+            <button class="content_navButtons--Button" onclick="goPage(1)">
+                <p>Episódio 2</p>
+            </button>
+
+            <button class="content_navButtons--Button" onclick="goPage(2)">
+                <p>Episódio 3</p>
+            </button>
+            <button class="content_navButtons--Button" onclick="goPage(3)">
+                <p>Episódio 4</p>
+            </button>
+
         </nav>
 
         <img class="menuPage_content--image" src="./assets/logo_tot.png" alt="Logo empresa TOT">
 
-        <iframe id="iframe_course" class="iframe_course hidden" src="" frameborder="0"></iframe>
-
     </main>
 
-    <footer class="footer_menuPage hidden">
+    <iframe id="iframe_course" class="iframe_course hidden" src="" frameborder="0"></iframe>
+
+    <footer class="footer_menuPage ">
 
         <nav class="menuPage_container--navButtonsCourse">
 
-            <button class="main_button-previous" onclick="goToLastPage()">
+            <button class="main_button-previous nav_buttons--main hidden" onclick="goToMenu()">
                 <p>Menu</p>
             </button>
 
-            <button class="main_button-next" onclick="goToNextPage()">
+            <button class="main_button-next nav_buttons--main hidden" onclick="goToNextPage()">
                 <p>Próximo episódio</p>
-            </button>
-
-            <button class="main_button-finish hidden">
-                <p>Finalizar curso</p>
             </button>
 
         </nav>
 
     </footer>
 
-
-
-    <script src="./JScript/start.js"></script>
-
-    <script src="./JScript/showOrHiddenButtons.js"></script>
-
-    <script src="./JScript/navPagesButton.js"></script>
-
-    <script src="./JScript/finishButton.js"></script>
-
-    <script src="./JScript/goPage.js"></script>
-
-    <script src="./JScript/menu.js"></script>
-
-
-
     <script>
-        window.onload = startCourse();
-    </script>
+        let pageCounter = new Array(4);
 
+        pageCounter[0] = "../Pages/episode01.html";
+        pageCounter[1] = "../Pages/episode02.html";
+        pageCounter[2] = "../Pages/episode03.html";
+        pageCounter[3] = "../Pages/episode04.html";
+
+        let currentPage = null;
+
+        let arrivedAtTheEnd = false;
+
+        let lastPage = 0;
+
+        let iframeCourse = document.querySelector("#iframe_course");
+
+        let previousButton = document.querySelector(".main_button-previous");
+
+        let nextButton = document.querySelector(".main_button-next");
+
+        let headerMenu = document.querySelector(".header_menuPage");
+
+        let mainMenu = document.querySelector(".main_menuPage");
+
+        function goPage(page) {
+
+            if (page >= 0) {
+                window.scrollTo(0, 0);
+
+                showOrHiddenButtons(page);
+                mainMenu.classList.add("hidden");
+                headerMenu.classList.add("hidden");
+                iframeCourse.classList.remove("hidden");
+                iframeCourse.src = pageCounter[page];
+                setValueLMS("cmi.core.lesson_location", page);
+                currentPage = page
+
+                if (currentPage == 3) {
+                    arrivedAtTheEnd = true;
+                    nextButton.classList.add("hidden");
+                    setValueLMS("cmi.core.lesson_status", "completed");
+                    finishLMS();
+                }
+
+            } else {
+                falseResult();
+            }
+        }
+
+        function goToLastPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                goPage(0);
+            }
+        }
+
+        function goToNextPage() {
+            if (currentPage < pageCounter.length) {
+                currentPage++;
+                goPage(currentPage);
+            }
+        }
+
+        function goToMenu() {
+            iframeCourse.src = "";
+            iframeCourse.classList.add("hidden");
+            currentPage = null;
+
+            headerMenu.classList.remove("hidden");
+            mainMenu.classList.remove("hidden");
+            previousButton.classList.add("hidden");
+            nextButton.classList.add("hidden");
+        }
+
+        function showOrHiddenButtons(currentPage) {
+
+            if (currentPage == null) {
+                previousButton.classList.add("hidden");
+                nextButton.classList.add("hidden");
+
+            } else if (currentPage == 0 || currentPage !== 0 || currentPage !== null && currentPage <= 4) {
+                previousButton.classList.remove("hidden");
+                nextButton.classList.remove("hidden");
+
+            }
+        }
+
+        function startCourse() {
+
+            startLMS();
+
+            let gettingClassState = getValueLMS("cmi.core.lesson_status");
+
+            if (gettingClassState == "not attempted") {
+                gettingClassState = setValueLMS("cmi.core.lesson_status", "incomplete");
+            }
+
+            let markPage = getValueLMS("cmi.core.lesson_location");
+
+            if (markPage == "") {
+                currentPage = 0;
+                setValueLMS("cmi.core.lesson_location", currentPage)
+            }
+
+            else {
+                currentPage = markPage;
+                goPage(currentPage);
+            }
+        }
+
+        window.onload = startCourse();
+
+    </script>
 
 </body>
 

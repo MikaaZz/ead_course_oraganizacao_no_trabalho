@@ -9,12 +9,13 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="./styles/episode04.css">
+    <link rel="stylesheet" href="./styles/episodeFour/hiddenBlocks.css">
 </head>
 
 <body>
-    <header class="header_pageFour">
+    <header class="header_pageFour padding_header">
 
-        <span class="pageFour_content--icon material-symbols-outlined">
+        <span class="pageFour_content--icon material-symbols-outlined" onclick="playVideo()">
             play_arrow
         </span>
 
@@ -22,7 +23,13 @@
 
         <h2 class="pageFour_content--subtitle">pode estimular</h2>
 
-        <h2 class="pageFour_content--title">organização no trabalho</h2>
+        <h2 class="pageFour_content--title titleTwo">organização no trabalho</h2>
+
+        <div class="pageFour_background--iframe hidden">
+            <video id="video" src="assets/episode01/cena-03-v1.mp4" controls autoplay width="100%"
+                height="100%"></video>
+
+        </div>
 
     </header>
     <main class="main_pageFour">
@@ -42,135 +49,158 @@
 
                 <button class="content_interactionButtons--buttons">
 
-                    <img class="content_interactionButtons--iconImage" src="assets/episode04/icone_one--episodeFour.png" alt="Icone Pessoas com estrela">
+                    <img class="content_interactionButtons--iconImage" src="assets/episode04/icone_one--episodeFour.png"
+                        alt="Icone Pessoas com estrela">
 
                 </button>
 
                 <button class="content_interactionButtons--buttons">
 
-                    <img class="content_interactionButtons--iconImage" src="assets/episode04/icone_two--episodeFour.png" alt="Icone Pessoa vencedora em podium">
+                    <img class="content_interactionButtons--iconImage" src="assets/episode04/icone_two--episodeFour.png"
+                        alt="Icone Pessoa vencedora em podium">
 
                 </button>
 
                 <button class="content_interactionButtons--buttons">
 
-                    <img class="content_interactionButtons--iconImage" src="assets/episode04/icone_tree--episodeFour.png" alt="Icone Pessoas pensando juntas">
+                    <img class="content_interactionButtons--iconImage"
+                        src="assets/episode04/icone_tree--episodeFour.png" alt="Icone Pessoas pensando juntas">
 
                 </button>
 
                 <button class="content_interactionButtons--buttons">
 
-                    <img class="content_interactionButtons--iconImage" src="assets/episode04/icone_four--episodeFour.png" alt="Icone Livros na estante">
+                    <img class="content_interactionButtons--iconImage"
+                        src="assets/episode04/icone_four--episodeFour.png" alt="Icone Livros na estante">
 
                 </button>
 
             </div>
 
-            <div class="container_interactionButtons--buttonOne">
+            <div class="container_interactionButtons--tips">
 
-                <h2 class="content_buttonOne--upperTitle">Dar o exemplo</h2>
 
-                <hr class="content_buttonOne--separationBar">
 
-                <p class="content_buttonOne--lowerTitle">Líderes que não se organizam não podem esperar que seus
-                    funcionários se
-                    organizem.</p>
+                <div class="container_interactionButtons--buttonOne h-hide hidden">
 
-                <div class="container_buttonOne--card">
-                    <p class="content_buttonOne--paragraph">
-                        Profissionais que não organizam suas prioridades estão em uma posição frágil para liderar de
-                        forma eficaz. Eles não são capazes de ver o quadro geral ou executar planos e, portanto, não
-                        podem delegar tarefas com eficiência
+                    <h2 class="content_buttonOne--upperTitle">Dar o exemplo</h2>
+
+                    <hr class="content_buttonOne--separationBar">
+
+                    <p class="content_buttonOne--lowerTitle">Líderes que não se organizam não podem esperar que seus
+                        funcionários se
+                        organizem.</p>
+
+                    <div class="container_buttonOne--card">
+                        <p class="content_buttonOne--paragraph">
+                            Profissionais que não organizam suas prioridades estão em uma posição frágil para liderar de
+                            forma eficaz. Eles não são capazes de ver o quadro geral ou executar planos e, portanto, não
+                            podem delegar tarefas com eficiência
+                        </p>
+                    </div>
+
+                    <div class="container_buttonOne--card">
+                        <p class="content_buttonOne--paragraph">
+                            Se você é um líder, é importante que tenha um sistema de organização para que o trabalho
+                            possa
+                            ser feito a tempo, com eficiência e eficácia. Isso pode ser feito definindo expectativas
+                            claras,
+                            comunicando-se regularmente com a equipe e realizando reuniões regulares.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="container_interactionButtons--buttonTwo h-hide hidden">
+
+                    <h2 class="content_buttonTwo--upperTitle">Fornecer maior autonomia aos colaboradores</h2>
+                    <hr class="content_buttonTwo--separationBar">
+
+                    <div class="container_buttonTwo--videoList">
+                        <div class="content_buttonTwo--video">
+                            
+                            <iframe src="https://player.vimeo.com/video/723850590?h=258b0266ea" width="100%"
+                                height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            
+                        </div>
+                        <ul class="container_buttonTwo--list">
+                            <li class="content_buttonTwo--item">Criar metas claras com prazos claros;</li>
+                            <li class="content_buttonTwo--item">Projetar estruturas de projeto que permitam autonomia
+                            </li>
+                            <li class="content_buttonTwo--item">Deixe que os trabalhadores decidam como querem fazer seu
+                                trabalho, desde que obtenham os resultados esperados.</li>
+                        </ul>
+                    </div>
+
+                    <p class="content_buttonTwo--paragraph">A motivação anda de mãos dadas com a organização - se o
+                        colaborador não
+                        estiver motivado, não terá a energia ou o impulso necessário para as tarefas organizacionais.
                     </p>
+
                 </div>
 
-                <div class="container_buttonOne--card">
-                    <p class="content_buttonOne--paragraph">
-                        Se você é um líder, é importante que tenha um sistema de organização para que o trabalho possa
-                        ser feito a tempo, com eficiência e eficácia. Isso pode ser feito definindo expectativas claras,
-                        comunicando-se regularmente com a equipe e realizando reuniões regulares.
-                    </p>
-                </div>
+                <div class="container_interactionButtons--buttonTree h-hide hidden">
 
-            </div>
+                    <h2 class="content_buttonTree--upperTitle">Capacitar os funcionários</h2>
+                    <hr class="content_buttonTree--separationBar">
+                    <p class="content_buttonTree--lowerTitle">Pode ser difícil se organizar em uma tarefa se você não
+                        sabe
+                        exatamente
+                        como executá-la. Então, como trazer esse conhecimento aos colaboradores?</p>
+                    <div class="container_buttonTree--contents">
+                        <div class="container_buttonTree--card">
+                            <p class="content_buttonTree--paragraph">
+                                É preciso capacitar os colaboradores para desempenhar suas funções, fornecendo as
+                                ferramentas e
+                                os recursos certos.
+                            </p>
+                        </div>
 
-            <div class="container_interactionButtons--buttonTwo">
+                        <div class="container_buttonTree--card">
+                            <p class="content_buttonTree--paragraph">
+                                Os locais de trabalho digitais não são diferentes a esse respeito, e há muitas maneiras
+                                de
+                                as
+                                empresas fornecerem suporte organizacional para sua equipe.
+                            </p>
+                        </div>
 
-                <h2 class="content_buttonTwo--upperTitle">Fornecer maior autonomia aos colaboradores</h2>
-                <hr class="content_buttonTwo--separationBar">
-
-                <div class="container_buttonTwo--videoList">
-                    <div class="content_buttonTwo--video">
-                        <iframe src="https://player.vimeo.com/video/719931050?h=693430b331" width="100%" height="100%"
-                            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <ul class="container_buttonTwo--list">
-                        <li class="content_buttonTwo--item">Criar metas claras com prazos claros;</li>
-                        <li class="content_buttonTwo--item">Projetar estruturas de projeto que permitam autonomia</li>
-                        <li class="content_buttonTwo--item">Deixe que os trabalhadores decidam como querem fazer seu
-                            trabalho, desde que obtenham os resultados esperados.</li>
-                    </ul>
-                </div>
-
-                <p class="content_buttonTwo--paragraph">A motivação anda de mãos dadas com a organização - se o
-                    colaborador não
-                    estiver motivado, não terá a energia ou o impulso necessário para as tarefas organizacionais.</p>
-
-            </div>
-
-            <div class="container_interactionButtons--buttonTree">
-
-                <h2 class="content_buttonTree--upperTitle">Capacitar os funcionários</h2>
-                <hr class="content_buttonTree--separationBar">
-                <p class="content_buttonTree--lowerTitle">Pode ser difícil se organizar em uma tarefa se você não sabe
-                    exatamente
-                    como executá-la. Então, como trazer esse conhecimento aos colaboradores?</p>
-                <div class="container_buttonTree--contents">
-                    <div class="container_buttonTree--card">
-                        <p class="content_buttonTree--paragraph">
-                            É preciso capacitar os colaboradores para desempenhar suas funções, fornecendo as
-                            ferramentas e
-                            os recursos certos.
-                        </p>
-                    </div>
-
-                    <div class="container_buttonTree--card">
-                        <p class="content_buttonTree--paragraph">
-                            Os locais de trabalho digitais não são diferentes a esse respeito, e há muitas maneiras de
-                            as
-                            empresas fornecerem suporte organizacional para sua equipe.
-                        </p>
-                    </div>
-
-                    <div class="container_buttonTree--card cardTree">
-                        <p class="content_buttonTree--paragraph">
-                            Não deixei que a equipe se sinta “abandonada”, forneça o que for necessário para que
-                            desenvolvam
-                            esta habilidade, compartilhe ferramentas que utiliza. E caso você seja esta pessoa da equipe
-                            que
-                            se sente abandonada, converse com o seu gestor ou responsável e alinhe suas expectativas.
-                            Você
-                            mesmo pode mostrar as ferramentas que conheceu aqui no curso e mostrar como pode ser útil
-                            para a
-                            equipe.
-                        </p>
+                        <div class="container_buttonTree--card cardTree">
+                            <p class="content_buttonTree--paragraph">
+                                Não deixei que a equipe se sinta “abandonada”, forneça o que for necessário para que
+                                desenvolvam
+                                esta habilidade, compartilhe ferramentas que utiliza. E caso você seja esta pessoa da
+                                equipe
+                                que
+                                se sente abandonada, converse com o seu gestor ou responsável e alinhe suas
+                                expectativas.
+                                Você
+                                mesmo pode mostrar as ferramentas que conheceu aqui no curso e mostrar como pode ser
+                                útil
+                                para a
+                                equipe.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container_interactionButtons--buttonFour">
+                <div class="container_interactionButtons--buttonFour h-hide hidden">
 
-                <h2 class="content_buttonFour--upperTitle">Incentivar a organização no trabalho home office</h2>
-                <hr class="content_buttonFour--separationBar">
-                <img class="content_buttonFour--image" src="./assets/episode04/gif_episodeFour.gif"
-                    alt="Gif homem nervoso mexendo no computador">
+                    <h2 class="content_buttonFour--upperTitle">Incentivar a organização no trabalho home office</h2>
+                    <hr class="content_buttonFour--separationBar">
+                    <img class="content_buttonFour--image" src="./assets/episode04/gif_episodeFour.gif"
+                        alt="Gif homem nervoso mexendo no computador">
 
-                <p class="content_buttonFour--paragraph">Toda organização que dá como opção este modo de trabalho, deve
-                    ter um
-                    plano de organização muito bem planejado e alinhado com a equipe. </p>
-                <p class="content_buttonFour--paragraph">A organização no trabalho home office é um dos desafios mais
-                    comuns
-                    enfrentados pelos colaboradores</p>
+                    <p class="content_buttonFour--paragraph">Toda organização que dá como opção este modo de trabalho,
+                        deve
+                        ter um
+                        plano de organização muito bem planejado e alinhado com a equipe. </p>
+                    <p class="content_buttonFour--paragraph">A organização no trabalho home office é um dos desafios
+                        mais
+                        comuns
+                        enfrentados pelos colaboradores</p>
+
+                </div>
 
             </div>
 
@@ -242,5 +272,7 @@
 
     </footer>
 </body>
+
+<script src="scripts/episode04.js"></script>
 
 </html>

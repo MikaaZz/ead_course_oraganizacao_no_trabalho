@@ -1,0 +1,208 @@
+.container_tips--tipTree {
+    background-image: url(../../assets/episode02/backgroundImage_tipTree--episodeTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-areas:
+        "titleTipTree titleTipTree"
+        "textTipTree textTipTree"
+        "listTipTree interactionBlockTipTree"
+        "listTipTree interactionBlockTipTree";
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 5% 0;
+
+    width: 100%;
+}
+
+.content_tipTree--upperTitle {
+    color: var(--fontColor--title);
+
+    font-weight: 300;
+    font-size: 2rem;
+
+    grid-area: titleTipTree;
+
+    margin: 1% auto;
+
+    text-align: center;
+
+    width: 90%;
+}
+
+.content_tipTree--paragraph {
+    color: var(--fontColor--title);
+
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    grid-area: textTipTree;
+
+    margin:0 auto 2% auto;
+
+    text-align: center;
+
+    width: 80%;
+}
+
+.container_tipTree--list {
+    grid-area: listTipTree;
+    grid-template-areas: 
+    "listItemOneTipTree listItemOneTipTree"
+    "listItemTwoTipTree listItemTwoTipTree";
+    margin: 2% auto;
+    width: 80%;
+}
+
+.content_tipTree--item {
+    color: var(--fontColor--title);
+
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    margin:1% auto;
+}
+
+.listItemOneTipTree {
+    grid-area: listItemOneTipTree;
+}
+
+.listItemTwoTipTree {
+    grid-area: listItemTwoTipTree;
+}
+
+.container_tipTree--interactionBlock {
+    grid-area: interactionBlockTipTree;
+    margin: 2% auto;
+    width: 80%;
+}
+
+.container_tipTree--textBlock {
+    background-color: var(--backgroundColor--blue);
+    color: var(--fontColor--white);
+
+    border-radius:  2rem 2rem 0 0;
+
+    padding: 5%;
+
+    text-align: center;
+}
+
+.content_tipTree--text {
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.container_tipTree--buttons {
+    align-items: center;
+    display: grid;
+
+    grid-template-areas:
+    "buttonOneTipTree buttonTwoTipTree buttonTreeTipTree buttonFourTipTree buttonFiveTipTree buttonSixTipTree";
+    grid-template-columns: repeat(6,1fr);
+
+    justify-content: space-around;
+
+    background-color: var(--backgroundColor--buttonClicked);
+    color: var(--backgroundColor--blue);
+
+    font-family: 'riffic_bold';
+}
+
+.content_tipTree--button {
+    cursor: pointer;
+    
+    font-size: 1.2rem;
+    
+    margin: auto;
+    padding: 2%;
+}
+
+.content_tipTree--buttonOne {
+    grid-area: buttonOneTipTree;
+}
+
+.content_tipTree--buttonTwo {
+    grid-area: buttonTwoTipTree;
+}
+
+.content_tipTree--buttonTree {
+    grid-area: buttonTreeTipTree;
+}
+
+.content_tipTree--buttonFour {
+    grid-area: buttonFourTipTree;
+}
+
+.content_tipTree--buttonFive {
+    grid-area: buttonFiveTipTree;
+}
+
+.content_tipTree--buttonSix {
+    grid-area: buttonSixTipTree;
+}
+
+.borderClickedTipTree {
+    border: .2rem solid var(--backgroundColor--blue);
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.container_tipTree--interactionTexts {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content_tipTree--interactionText {
+    background-color: var(--backgroundColor--gray);
+    color: var(--fontColor--button);
+
+    border-radius: 0 0 2rem 2rem;
+
+    
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    padding: 5%;
+
+    text-align: center;
+}
+
+/*
+
+.textOne--tipTree {}
+
+.textTwo--tipTree {}
+
+.textTree--tipTree {}
+
+.textFour--tipTree {}
+
+.textFive--tipTree {}
+
+.textSix--tipTree {}
+
+*/
+
+@media screen and (max-width:425px) {
+
+    .container_tips--tipTree {
+        grid-template-areas:
+        "titleTipTree titleTipTree"
+        "textTipTree textTipTree"
+        "listTipTree listTipTree"
+        "interactionBlockTipTree interactionBlockTipTree"
+        ;
+    }
+}

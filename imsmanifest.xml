@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 
 <manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-identifier="com.scorm.irbbrasil.contentpackaging.singlesco.12" version="1" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+identifier="com.scorm.organizationcourse.contentpackaging.singlesco.12" version="1" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
 <!-- identificer utilizing my courseID-->
 
   <metadata>
@@ -26,47 +26,25 @@ identifier="com.scorm.irbbrasil.contentpackaging.singlesco.12" version="1" xsi:s
 
     <resource identifier="prateleira_tot_organização_course_resource" type="webcontent" adlcp:scormtype="sco" href="./API/launchPage.html">
 
-      <file href="Pages/introduction.html" />
-      <file href="Pages/style/introduction/introduction.css" />
-      <file href="Pages/assets/introduction/PLD_IRB_capa.gif" />
-      <file href="Pages/assets/introduction/introduction_image.png" />
+      <file href="Pages/episode01.html" />
+      <file href="Pages/styles/episode01.css" />
+      <file href="Pages/scripts/episode01.js" />
 
-      <file href="Pages/step01.html" />
-      <file href="Pages/style/step01/step01.css" />
+      <file href="Pages/episode02.html" />
+      <file href="Pages/styles/episode02.css" />
+      <file href="Pages/scripts/episode02.js" />
+      <file href="Pages/scripts/episode02/tip01.js" />      
+      <file href="Pages/scripts/episode02/tip02.js" />      
+      <file href="Pages/scripts/episode02/tip03.js" />      
+      <file href="Pages/scripts/episode02/tip05.js" />      
 
-      <file href="Pages/step02.html" />
-      <file href="Pages/style/step02/step02.css" />
-      <file href="Pages/exercise/step02/index.html" />
+      <file href="Pages/episode03.html" />
+      <file href="Pages/styles/episode03.css" />
+      <file href="Pages/scripts/episode03.js" />
 
-      <file href="Pages/step03.html" />
-      <file href="Pages/style/step03/step03.css" />
-      <file href="Pages/exercise/step03/index.html" />
-
-      <file href="Pages/step04.html" />
-      <file href="Pages/style/step04/step04.css" />
-
-      <file href="Pages/step05.html" />
-      <file href="Pages/style/step05/step05.css" />
-
-      <file href="Pages/step06.html" />
-      <file href="Pages/style/step06/step06.css" />
-
-      <file href="Pages/step07.html" />
-      <file href="Pages/style/step07/step07.css" />
-      <file href="Pages/exercise/step07/index.html" />
-
-      <file href="Pages/step08.html" />
-      <file href="Pages/style/step08/step08.css" />
-
-      <file href="Pages/step09.html" />
-      <file href="Pages/style/step09/step09.css" />
-      <file href="Pages/exercise/step09/index.html" />
-
-      <file href="Pages/step10.html" />
-      <file href="Pages/style/step10/step10.css" />
-
-      <file href="Pages/step12.html" />
-      <file href="Pages/style/finish/finish.css" />
+      <file href="Pages/episode04.html" />
+      <file href="Pages/styles/episode04.css" />
+      <file href="Pages/scripts/episode04.js" />
 
       <dependency identifierref="common_files" />
     </resource>
@@ -75,23 +53,16 @@ identifier="com.scorm.irbbrasil.contentpackaging.singlesco.12" version="1" xsi:s
 
       <file href="./API/launchPage.html" />
 
-      <file href="./API/JScript/API.js" />
-      <file href="./API/JScript/goPage.js" />
-      <file href="./API/JScript/menu.js" />
-      <file href="./API/JScript/navPagesButton.js" />
-      <file href="./API/JScript/showOrHiddenButtons.js" />
-      <file href="./API/JScript/start.js" />
-      <file href="./API/JScript/finishButton.js" />
+      <file href="./API/API.js" />
 
       <file href="./API/css/style.css" />
 
-      <file href="./API/assets/logo_irb.svg" />
-      <file href="./API/assets/pld_irb_capa.gif" />
+      <file href="./API/assets/image_background_launchPage.png" />
+      <file href="./API/assets/logo_tot.png" />
 
-      <file href="./Fonts/Effra_Std_Rg.ttf" />
-      <file href="./Fonts/Effra_Std_Lt.ttf" />
-      <file href="./Fonts/PF_Agora_Slab_Pro_Bold.ttf" />
-      <file href="./Fonts/PF_Agora_Slab_Pro_Regular.ttf" />
+      <file href="./Fonts/CaviarDreams.ttf" />
+      <file href="./Fonts/CaviarDreams_Bold.ttf" />
+      <file href="./Fonts/RifficFree-Bold.ttf" />
 
     </resource>
 

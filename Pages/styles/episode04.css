@@ -53,14 +53,17 @@ main {
 
 h1 {
     font-family: 'riffic_bold';
+    text-align: center;
 }
 
 h2 {
     font-family: 'riffic_bold';
+    text-align: center;
 }
 
 h3 {
     font-family: 'riffic_bold';
+    text-align: center;
 }
 
 a {
@@ -84,6 +87,9 @@ a {
 
     color: var(--fontColor--episodesTitle);
 
+}
+
+.padding_header {
     padding: 5% 0;
 }
 
@@ -113,6 +119,14 @@ a {
     margin: 2%;
 
     text-align: center;
+}
+
+.pageFour_background--iframe {
+    
+    height: 60vh;
+    width: 100vw;
+
+    opacity: 0;
 }
 
 .main_pageFour {
@@ -843,4 +857,12 @@ a {
     .content_buttonFour--image {
         width: 250px;
     }
+}
+
+.hidden {
+    display: none;
+}
+
+.setOpacity {
+    opacity: 1;
 }
